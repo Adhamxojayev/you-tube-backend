@@ -8,7 +8,7 @@ import { VideoModule } from './video/video.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({isGlobal: true}),
+    ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: process.env.POSTGRES_HOST,
@@ -16,10 +16,10 @@ import { VideoModule } from './video/video.module';
       database: process.env.POSTGRES_DATABASE,
       password: process.env.POSTGRES_PASSWORD,
       autoLoadEntities: true,
-      synchronize: true
+      synchronize: true,
     }),
     UserModule,
-    VideoModule
+    VideoModule,
   ],
   controllers: [AppController],
   providers: [AppService],
