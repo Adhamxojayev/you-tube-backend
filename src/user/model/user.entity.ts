@@ -8,7 +8,7 @@ export class userEntity {
   @Column()
   username: string;
 
-  @Column({ select: false })
+  @Column()
   password: string;
 
   @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })

@@ -1,5 +1,5 @@
-export interface UserLogin {
+export interface userPost {
   user_id?: number;
-  username: string;
-  password: string;
+  username?: string;
+  password?: string;
 }
